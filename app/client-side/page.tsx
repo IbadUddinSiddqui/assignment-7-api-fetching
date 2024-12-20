@@ -40,11 +40,11 @@ const Page: React.FC = () => {
        
       <h1 className='text-5xl  text-white m-4 font-bold text-center '>Client-side Fetched Products</h1>
     <p className='text-center'>  {loading ? "Fetching Data....." : ""}</p>
-      <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+      <ul className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3'>
       {products.map((product) => (
     <li
       key={product.id}
-      className="flex flex-col bg-gray-900 items-center mx-auto md:w-[375px] w-[300px] lg:w-[450px] m-2 bg-gradient-to-r from-gray-800 to-gray-900 text-white border border-gray-700 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-blue-500"
+      className="flex flex-col bg-gray-900 items-center mx-auto md:w-[375px] w-[300px] mxl:w-[450px] m-2 bg-gradient-to-r from-gray-800 to-gray-900 text-white border border-gray-700 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:border-blue-500"
     >
       <div className="w-full h-48 overflow-hidden rounded-t-lg">
         <img
